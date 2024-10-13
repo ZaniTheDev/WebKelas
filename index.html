@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XI TJKT 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="album.css">
+</head>
+<body class="space-gradient text-white min-h-screen overflow-x-hidden">
+    <div id="stars" class="fixed inset-0 z-0"></div>
+    
+    <header class="fixed w-full z-50 glass-effect">
+        <nav class="container mx-auto py-4 px-6">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold gradient-text">XI TJKT 2</h1>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="#about" class="hover:text-blue-400 transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-400 hover:after:w-full after:transition-all">About</a></li>
+                    <li><a href="#projects" class="hover:text-blue-400 transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-400 hover:after:w-full after:transition-all">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-400 transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-blue-400 hover:after:w-full after:transition-all">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="relative z-10">
+        <section id="hero" class="min-h-screen flex items-center justify-center custom-shape space-gradient">
+            <div class="text-center px-4">
+                <h2 class="text-6xl font-bold mb-6 opacity-0" id="hero-title">Welcome to <span class="gradient-text">XI TJKT 2</span></h2>
+                <p class="text-xl mb-8 opacity-0" id="hero-subtitle">Exploring the universe of Technology 🚀</p>
+                <a href="#projects" class="inline-block bg-transparent border-2 border-blue-400 text-blue-400 font-bold py-3 px-8 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-300 opacity-0" id="hero-button">View Our Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="py-32">
+            <div class="container mx-auto px-4">
+                <h2 class="text-5xl font-bold mb-16 text-center gradient-text">About XI TJKT 2</h2>
+                
+                <!-- Main Content -->
+                
+                    <!-- Main Content -->
+                    <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                        <!-- Left Side - Interactive Planet -->
+                        <div class="planet-container flex-shrink-0">
+                            <div class="glow"></div>
+                            <div class="orbit-circle"></div>
+                            <div class="orbit-element"></div>
+                            <img src="images/photo2.jpeg" alt="Profile" class="profile-image">
+                        </div>
+    
+                    <!-- Right Side - Content -->
+                    <div class="flex-1 space-y-8">
+                        <div class="glass-card p-6 rounded-xl" data-aos="fade-up">
+                            <h3 class="text-2xl font-bold mb-4 gradient-text">Who We Are</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Kami adalah siswa-siswi kelas 11 jurusan Teknik Komputer dan Jaringan (TKJ) 2. Di kelas ini, kami belajar tidak hanya tentang komputer, jaringan, dan teknologi, tetapi juga tentang bagaimana bekerja sama sebagai tim, memecahkan masalah, dan mengembangkan kreativitas dalam dunia teknologi yang terus berkembang.
+                            </p>
+                        </div>
+    
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="glass-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="100">
+                                <h4 class="text-xl font-bold mb-3 text-blue-400">Our Mission</h4>
+                                <p class="text-gray-300">Misi kami adalah menguasai teknologi informasi dan jaringan dengan semangat belajar dan inovasi. Kami bertekad untuk bekerja sama sebagai tim, menemukan solusi kreatif, dan bertanggung jawab dalam setiap tugas.</p>
+                            </div>
+    
+                            <div class="glass-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="200">
+                                <h4 class="text-xl font-bold mb-3 text-purple-400">Our Vision</h4>
+                                <p class="text-gray-300">Visi kami adalah menjadi generasi unggul di bidang teknologi informasi dan jaringan, yang mampu beradaptasi dengan perubahan zaman dan berkontribusi positif dalam perkembangan teknologi global.
+                                </p>
+                            </div>
+                        </div>
+    
+                        <!-- Skills Section -->
+                        <div class="glass-card p-6 rounded-xl" data-aos="fade-up" data-aos-delay="300">
+                            <h4 class="text-xl font-bold mb-4 gradient-text">Struktur Kelas</h4>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="text-center p-4">
+                                    <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-blue-500/20 flex items-center justify-center">
+                                        <img src="/api/placeholder/32/32" alt="" class="w-8 h-8">
+                                    </div>
+                                    <p class="text-sm">Andika Dwi Saputra</p>
+                                </div>
+                                <div class="text-center p-4">
+                                    <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-purple-500/20 flex items-center justify-center">
+                                        <img src="/api/placeholder/32/32" alt="" class="w-8 h-8">
+                                    </div>
+                                    <p class="text-sm">Muhammad Haikal Akbar</p>
+                                </div>
+                                <div class="text-center p-4">
+                                    <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-cyan-500/20 flex items-center justify-center">
+                                        <img src="/api/placeholder/32/32" alt="" class="w-8 h-8">
+                                    </div>
+                                    <p class="text-sm">Keke</p>
+                                </div>
+                                <div class="text-center p-4">
+                                    <div class="w-16 h-16 mx-auto mb-3 rounded-full bg-pink-500/20 flex items-center justify-center">
+                                        <img src="/api/placeholder/32/32" alt="" class="w-8 h-8">
+                                    </div>
+                                    <p class="text-sm">Mulkiyah</p>
+                                </div>
+                            </div>
+                     </div>
+                </div>
+        </section>
+        
+        <div id="enhanced-carousel" class="relative w-full max-w-4xl mx-auto top-20" data-carousel="slide">
+            
+            <h2 class="text-5xl font-bold mb-16 text-center gradient-text">Photo Gallery</h2>
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                 <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/PhotoKelas1.jpeg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo 1">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-10 text-white p-4">
+                        <h3 class="text-xl font-bold">Photo day</h3>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <img src="images/PhotoKelas2.jpeg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo 2">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-xl font-bold">Hari Batik Nasional</h3>
+                    </div>
+                </div>
+                
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/Photokelas3.jpeg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo 6">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-xl font-bold">Sholawat Nabi</h3>
+                    </div>
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/Photokelas4.jpeg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo 6">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-xl font-bold">No title</h3>
+                    </div>
+                </div>
+                
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/Photokelas5.jpeg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo 6">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-xl font-bold">Basis 11 TKJ 2😹</h3>
+                    </div>
+                </div>
+
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="images/PhotoKelas6.jpeg" class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="Photo 6">
+                    <div class="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white p-4">
+                        <h3 class="text-xl font-bold">TOTTTT🔊🔊</h3>
+                    </div>
+                </div>
+                
+                
+                <!-- Add more items similarly -->
+            </div>
+            <!-- Slider controls -->
+            <button type="button" class="absolute top-11 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button" class="absolute top-11 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50 group-focus:ring-4 group-focus:ring-white group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                
+                <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full bg-white dark:bg-gray-800" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+              
+              <!-- Add more indicators for each slide -->
+            </div>
+            <!-- Progress bar -->
+            
+        </div>
+
+        <section id="contact" class="py-32 px-4 relative top-24">
+            <div class="container mx-auto max-w-xl">
+                <h2 class="text-4xl font-bold mb-16 text-center gradient-text">Contact us</h2>
+                <form class="glass-effect p-8 rounded-xl opacity-0" id="contact-form">
+                    <div class="mb-6">
+                        <label for="name" class="block mb-2 text-sm font-medium">Name</label>
+                        <input type="text" id="name" class="w-full p-3 bg-black/20 rounded-lg border border-gray-600 focus:border-blue-400 focus:ring-2 focus:ring-blue-400 transition-all">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block mb-2 text-sm font-medium">Email</label>
+                        <input type="email" id="email" class="w-full p-3 bg-black/20 rounded-lg border border-gray-600 focus:border-blue-400 focus:ring-2 focus:ring-blue-400 transition-all">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2 text-sm font-medium">Message</label>
+                        <textarea id="message" rows="4" class="w-full p-3 bg-black/20 rounded-lg border border-gray-600 focus:border-blue-400 focus:ring-2 focus:ring-blue-400 transition-all"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-lg transition-all transform hover:scale-105">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-effect py-8 mt-20">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 XI TJKT 2. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="album.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
